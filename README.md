@@ -20,5 +20,14 @@ This is because:
 1. Vite is able to import and bundle typescript from external folders, and
 2. *Deploying* a Typescript backend that imports types from other directories is tricky
 
+## Running the project
 
+```
+# Backend
+cd backend
+npm run dev
 
+# Frontend
+cd frontend
+npm run dev
+```
