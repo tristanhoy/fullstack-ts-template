@@ -31,3 +31,25 @@ npm run dev
 cd frontend
 npm run dev
 ```
+
+## Deploying to a hosting provider
+
+### Backend
+
+Deploy to any service that can host a NodeJS app - for example, render.com.
+
+- Root directory: `backend`
+- Build command: `npm install`
+- Run command: `npm dev`
+
+Once the backend has been deployed, you can test it by fetching the /greeting path e.g. https://fullstack-ts-template-backend.onrender.com/greeting
+
+### Frontend
+
+Deploy to any service that can host a static website - for example, render.com.
+
+- Root directory: `frontend`
+- Build command: `npm install && npm run build`
+- Artifact/output directory: `dist`
+
+To hook the frontend up to the backend, you'll need to take the endpoint you deployed to in the previous step and assigned this value to the `VITE_SERVER_URL` environment variable, for example `https://fullstack-ts-template-backend.onrender.com`.

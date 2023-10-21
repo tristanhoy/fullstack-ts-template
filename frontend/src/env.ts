@@ -7,7 +7,7 @@ const env: Env = import.meta.env.DEV
       serverUrl: 'http://localhost:8080'
     }
   : {
-      serverUrl: import.meta.env.VITE_SERVER_URL as string
+      serverUrl: (import.meta.env.VITE_SERVER_URL as string).replace(/\/$/, '')
     }
 
 export default env
